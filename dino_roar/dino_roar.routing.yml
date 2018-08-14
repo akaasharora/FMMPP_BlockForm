@@ -1,0 +1,13 @@
+dino_roar.dino_says:
+  path: /the/dino/says
+  defaults:
+    _controller: '\Drupal\dino_roar\Controller\RoarController::roar'
+  requirements:
+    _permission: 'access content'
+dino_roar.members_add:
+  path: '/admin/lao-data/members/id'
+  defaults:
+    _form: '\Drupal\dino_roar\Form\RoarMemberByIdForm'
+    _title: 'Find your MPP'
+  requirements:
+    _permission: 'access content'
